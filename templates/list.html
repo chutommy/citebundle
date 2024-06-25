@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Decorrelated Neural Network Training for Parameter Efficient Learning</h1>
+    <p>Compiled by Tommy Chu</p>
+  </header>
+  <hr>
+  <main>
+    <h2>Literature</h2>
+    {% for paper in papers %}
+    <article>
+      <header>
+        <h3>{{ paper.title }}</h3>
+        <p>{{ paper.authors }}</p>
+      </header>
+      Body
+      <footer><a href="{{ paper.doi }}" target="_blank">{{ paper.doi }}</a></footer>
+    </article>
+    {% endfor %}
+  </main>
+</body>
+
+</html>
